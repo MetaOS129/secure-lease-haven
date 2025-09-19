@@ -1,6 +1,7 @@
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Eye, Lock, MapPin, Bed, Bath, Square } from "lucide-react";
+import { Link } from "react-router-dom";
 
 interface PropertyCardProps {
   id: string;
@@ -88,11 +89,11 @@ const PropertyCard = ({
             )}
           </div>
 
-          <a href="/view-contract">
+          <Link to="/view-contract">
             <Button className="w-full wallet-connect">
               {encrypted ? "View & Sign Contract" : "View Details"}
             </Button>
-          </a>
+          </Link>
         </div>
       </div>
     </div>
