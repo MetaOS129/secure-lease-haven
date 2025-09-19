@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Shield, Eye, Lock } from "lucide-react";
+import { Key, Eye, Zap } from "lucide-react";
 
 const Hero = () => {
   return (
@@ -32,11 +32,11 @@ const Hero = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16 pt-8">
             <div className="flex flex-col items-center space-y-3">
               <div className="p-4 rounded-full bg-primary-foreground/10 border border-primary-foreground/20">
-                <Shield className="h-8 w-8 text-electric" />
+                <Key className="h-8 w-8 text-electric" />
               </div>
-              <h3 className="text-xl font-semibold">Encrypted Contracts</h3>
+              <h3 className="text-xl font-semibold">FHE Encryption</h3>
               <p className="text-primary-foreground/70 text-center">
-                Terms remain hidden until both parties commit to signing
+                Advanced cryptographic protection for all sensitive data
               </p>
             </div>
 
@@ -44,19 +44,19 @@ const Hero = () => {
               <div className="p-4 rounded-full bg-primary-foreground/10 border border-primary-foreground/20">
                 <Eye className="h-8 w-8 text-electric" />
               </div>
-              <h3 className="text-xl font-semibold">Market Protection</h3>
+              <h3 className="text-xl font-semibold">Privacy First</h3>
               <p className="text-primary-foreground/70 text-center">
-                Prevents rental price manipulation and bidding wars
+                Complete data protection with zero-knowledge architecture
               </p>
             </div>
 
             <div className="flex flex-col items-center space-y-3">
               <div className="p-4 rounded-full bg-primary-foreground/10 border border-primary-foreground/20">
-                <Lock className="h-8 w-8 text-electric" />
+                <Zap className="h-8 w-8 text-electric" />
               </div>
-              <h3 className="text-xl font-semibold">Secure Deposits</h3>
+              <h3 className="text-xl font-semibold">Smart Automation</h3>
               <p className="text-primary-foreground/70 text-center">
-                Blockchain-secured deposits with smart contract protection
+                Automated lease execution with blockchain security
               </p>
             </div>
           </div>

@@ -1,50 +1,52 @@
-# 🏠 Secure Lease Haven
+# 🏘️ Secure Lease Haven
 
-> **Revolutionary FHE-Encrypted Rental Platform** - Where privacy meets property leasing
+> **Next-Generation Privacy-First Rental Platform** - Revolutionizing property leasing with FHE encryption
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/MetaOS129/secure-lease-haven)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![React](https://img.shields.io/badge/React-20232A?logo=react&logoColor=61DAFB)](https://reactjs.org/)
 
-## 🔐 What Makes Us Different?
+## 🌟 Innovation at Its Core
 
-Secure Lease Haven is the **first decentralized rental platform** to implement **Fully Homomorphic Encryption (FHE)** for complete data privacy. Unlike traditional rental platforms that expose sensitive information, our platform ensures that:
+Secure Lease Haven pioneers the **first FHE-encrypted rental marketplace**, transforming how properties are leased in the Web3 era. Our platform ensures complete data privacy while maintaining seamless user experience.
 
-- 🔒 **Rental terms remain encrypted** until both parties commit
-- 🛡️ **Personal financial data** is never exposed to third parties
-- 🚫 **No market manipulation** through price visibility
-- ⚡ **Smart contract automation** with privacy preservation
-- 🌐 **Web3 native** with seamless wallet integration
+### 🎯 Core Advantages
 
-## ✨ Key Features
+- 🔐 **Zero-Knowledge Property Listings** - Property details encrypted until viewing
+- 💎 **FHE-Protected Financial Data** - Income and credit scores never exposed
+- 🚀 **Instant Smart Contract Execution** - Automated lease agreements
+- 🌍 **Global Web3 Accessibility** - Multi-chain wallet support
+- 📊 **Encrypted Reputation System** - Trust without transparency
 
-### 🔐 FHE-Encrypted Everything
-- **Encrypted Contracts**: All rental terms encrypted until signing
-- **Private Applications**: Tenant data never exposed
-- **Secure Payments**: Blockchain-secured with privacy
-- **Reputation System**: Encrypted scoring for all users
+## 🛠️ Technical Excellence
 
-### 🌐 Web3 Integration
-- **Multi-Wallet Support**: Rainbow, MetaMask, WalletConnect
-- **Ethereum Sepolia**: Testnet deployment ready
-- **Smart Contracts**: Automated lease management
-- **NFT Integration**: Property tokenization support
+### 🔧 Advanced Encryption
+- **Fully Homomorphic Encryption** for all sensitive operations
+- **Zero-Knowledge Proofs** for identity verification
+- **Secure Multi-Party Computation** for contract negotiations
+- **End-to-End Encrypted** communication channels
 
-### 🏢 Property Management
-- **Secure Listings**: Encrypted property details
-- **Automated Screening**: FHE-based tenant verification
-- **Smart Leases**: Self-executing contracts
-- **Reputation Tracking**: Encrypted user ratings
+### 🌐 Blockchain Integration
+- **Multi-Wallet Support** - Rainbow, MetaMask, Coinbase Wallet
+- **Ethereum Sepolia** testnet deployment
+- **Smart Contract Automation** for lease management
+- **NFT Property Tokens** for fractional ownership
 
-## 🚀 Quick Start
+### 🏗️ Modern Architecture
+- **React 18** with TypeScript for type safety
+- **Vite** for lightning-fast development
+- **Tailwind CSS** for responsive design
+- **shadcn/ui** for accessible components
+
+## 🚀 Getting Started
 
 ### Prerequisites
 - **Node.js** 18+ 
 - **npm** or **yarn**
 - **Git**
 
-### Installation
+### Quick Installation
 
 ```bash
 # Clone the repository
@@ -58,20 +60,20 @@ npm install
 npm run dev
 ```
 
-### Environment Setup
+### Environment Configuration
 
-Create `.env.local` with:
+Create `.env.local` with your configuration:
 
 ```env
 # Blockchain Configuration
 VITE_CHAIN_ID=11155111
-VITE_RPC_URL=https://sepolia.infura.io/v3/b18fb7e6ca7045ac83c41157ab93f990
+VITE_RPC_URL=your_rpc_url_here
 
 # Wallet Connect
-VITE_WALLET_CONNECT_PROJECT_ID=2ec9743d0d0cd7fb94dee1a7e6d33475
+VITE_WALLET_CONNECT_PROJECT_ID=your_project_id_here
 
 # Optional: Additional RPC
-VITE_INFURA_API_KEY=b18fb7e6ca7045ac83c41157ab93f990
+VITE_INFURA_API_KEY=your_infura_key_here
 ```
 
 ## 🏗️ Architecture
