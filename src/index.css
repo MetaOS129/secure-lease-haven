@@ -1,0 +1,187 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Real Estate Marketplace Design System - Professional with Tech Elements */
+
+@layer base {
+  :root {
+    /* Primary Brand Colors - Deep Professional Blue */
+    --background: 220 20% 97%;
+    --foreground: 220 15% 15%;
+    
+    /* Real Estate Professional Palette */
+    --primary: 220 60% 25%;
+    --primary-foreground: 220 20% 98%;
+    --primary-glow: 220 80% 45%;
+    
+    /* Crypto/Tech Accent - Electric Blue */
+    --electric: 200 100% 55%;
+    --electric-foreground: 220 20% 98%;
+    
+    /* Property Card Colors */
+    --property-card: 220 30% 98%;
+    --property-card-foreground: 220 15% 15%;
+    
+    /* UI Components */
+    --card: 220 30% 98%;
+    --card-foreground: 220 15% 15%;
+    --popover: 220 30% 98%;
+    --popover-foreground: 220 15% 15%;
+    
+    /* Interactive Elements */
+    --secondary: 220 20% 90%;
+    --secondary-foreground: 220 15% 15%;
+    --muted: 220 15% 88%;
+    --muted-foreground: 220 10% 45%;
+    --accent: 200 100% 55%;
+    --accent-foreground: 220 20% 98%;
+    
+    /* Status Colors */
+    --destructive: 0 75% 55%;
+    --destructive-foreground: 220 20% 98%;
+    --success: 145 65% 45%;
+    --success-foreground: 220 20% 98%;
+    
+    /* Borders and Inputs */
+    --border: 220 15% 85%;
+    --input: 220 15% 85%;
+    --ring: 220 60% 25%;
+    --radius: 0.75rem;
+    
+    /* Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(220 60% 25%), hsl(220 80% 45%));
+    --gradient-property: linear-gradient(180deg, hsl(220 30% 98%), hsl(220 25% 95%));
+    --gradient-electric: linear-gradient(90deg, hsl(200 100% 55%), hsl(180 100% 60%));
+    
+    /* Shadows */
+    --shadow-property: 0 4px 20px -2px hsl(220 60% 25% / 0.1);
+    --shadow-electric: 0 0 30px hsl(200 100% 55% / 0.3);
+    --shadow-hero: 0 20px 40px -10px hsl(220 60% 25% / 0.2);
+    
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+
+  .dark {
+    --background: 220 25% 8%;
+    --foreground: 220 20% 92%;
+    --primary: 220 80% 60%;
+    --primary-foreground: 220 25% 8%;
+    --card: 220 25% 10%;
+    --card-foreground: 220 20% 92%;
+    --popover: 220 25% 10%;
+    --popover-foreground: 220 20% 92%;
+    --secondary: 220 20% 15%;
+    --secondary-foreground: 220 20% 92%;
+    --muted: 220 15% 20%;
+    --muted-foreground: 220 10% 60%;
+    --accent: 200 100% 55%;
+    --accent-foreground: 220 25% 8%;
+    --border: 220 15% 20%;
+    --input: 220 15% 20%;
+    --ring: 220 80% 60%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+
+  /* Circuit Pattern Background */
+  .circuit-pattern {
+    background-image: 
+      radial-gradient(circle at 25% 25%, hsl(var(--electric)) 0.5px, transparent 0.5px),
+      radial-gradient(circle at 75% 75%, hsl(var(--primary-glow)) 0.5px, transparent 0.5px);
+    background-size: 50px 50px;
+    background-position: 0 0, 25px 25px;
+  }
+
+  /* City Skyline Animation */
+  @keyframes skyline {
+    0%, 100% { transform: translateX(0); }
+    50% { transform: translateX(-20px); }
+  }
+
+  .skyline-animate {
+    animation: skyline 20s ease-in-out infinite;
+  }
+
+  /* Property hover effects */
+  .property-hover {
+    transition: var(--transition-smooth);
+  }
+  
+  .property-hover:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-property);
+  }
+
+  /* Electric glow effect */
+  .electric-glow {
+    box-shadow: var(--shadow-electric);
+    animation: pulse-electric 2s ease-in-out infinite;
+  }
+
+  @keyframes pulse-electric {
+    0%, 100% { box-shadow: 0 0 20px hsl(var(--electric) / 0.3); }
+    50% { box-shadow: 0 0 40px hsl(var(--electric) / 0.5); }
+  }
+
+  /* Gradient text */
+  .gradient-text {
+    background: var(--gradient-electric);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+}
+
+@layer components {
+  /* Hero Section Styles */
+  .hero-section {
+    background: var(--gradient-hero);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero-section::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    @apply circuit-pattern opacity-10;
+  }
+
+  /* Property Card Styles */
+  .property-card {
+    background: var(--gradient-property);
+    border: 1px solid hsl(var(--border));
+    border-radius: var(--radius);
+    transition: var(--transition-smooth);
+  }
+
+  .property-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-property);
+  }
+
+  /* Wallet Connect Button */
+  .wallet-connect {
+    background: var(--gradient-electric);
+    color: hsl(var(--electric-foreground));
+    border: none;
+    transition: var(--transition-bounce);
+  }
+
+  .wallet-connect:hover {
+    transform: scale(1.05);
+    box-shadow: var(--shadow-electric);
+  }
+}
