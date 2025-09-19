@@ -23,7 +23,7 @@ const Hero = () => {
               </Button>
             </a>
             <a href="/how-it-works">
-              <Button variant="outline" size="lg" className="text-lg px-8 py-4 border-primary-foreground/20 text-primary-foreground hover:bg-primary-foreground/10">
+              <Button variant="outline" size="lg" className="text-lg px-8 py-4 border-white/30 text-white hover:bg-white/20 hover:text-white">
                 Learn More
               </Button>
             </a>
