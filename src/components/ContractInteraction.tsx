@@ -7,7 +7,7 @@ import { Label } from '@/components/ui/label';
 import { Textarea } from '@/components/ui/textarea';
 import { Badge } from '@/components/ui/badge';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import { Key, Home, User, DollarSign, FileText, Eye, Lock } from 'lucide-react';
+import { Key, Home, User, DollarSign, FileText, Eye, Lock, Shield } from 'lucide-react';
 import FHEEncryption from './FHEEncryption';
 
 // Contract ABI for SecureLeaseHaven with FHE support
